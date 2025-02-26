@@ -1,0 +1,32 @@
+Package: Zolar
+Title: Search Tool for finding Loupe compatible laser eye protection
+Version: 0.0.0.9000
+Authors@R: person('Melissa', 'Rich', email = 'melissa@innovativeoptics.com', role = c('cre', 'aut'))
+Description: Find laser satefy eyewear for dental lasers. Compatible with magnifying loupes. Use for companies, such as: Heine, Lumadent, Orascoptic, Andau. Ergo and Traditional Style.
+License: MIT + file LICENSE
+Imports: 
+    bslib,
+    config (>= 0.3.1),
+    dplyr,
+    golem (>= 0.4.0),
+    pkgload,
+    purrr,
+    readxl,
+    scales,
+    shiny (>= 1.7.4),
+    shinyjs,
+    gargle,
+    googlesheets4,
+    googledrive,
+    DentalLibrary
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/InnovativeOptics/Zolar
+BugReports: https://github.com/InnovativeOptics/Zolar/issues
+Config/testthat/edition: 1
