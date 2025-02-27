@@ -107,12 +107,11 @@ app_server <- function(input, output, session) {
   })
 
   output$contact_info <- renderUI({
-  #  if(input$lmfg == "Andau"){
-  #    h1(strong("To place an order, please, call Andau Customer Service 1-844andau88"))
-  #  } else{
-      h1(strong("Please call Innovative Optics at 763-425-7789 with any questions"))    #}
+    if(input$lmfg == "Andau"){
+      h1(strong("To place an order, please, call Andau Customer Service 1-844andau88"))
+    } else{
+      h1(strong("Please call Innovative Optics at 763-425-7789 with any questions"))    }
   })
-
 
   output$table_loupe <- renderTable(
     striped = T,
