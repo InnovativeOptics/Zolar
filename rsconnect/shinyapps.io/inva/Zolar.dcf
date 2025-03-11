@@ -5,7 +5,7 @@ account: inva
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 14100010
-bundleId: 9865901
+bundleId: 9922682
 url: https://inva.shinyapps.io/Zolar/
 version: 1
 asMultiple: FALSE

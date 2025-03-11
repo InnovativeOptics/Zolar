@@ -231,17 +231,17 @@ app_server <- function(input, output, session) {
       )
     ))
 
-#    if(input$lmfg == "Andau"){
-#      html_code <- map(html_code,
-#                       ~ gsub('<div class="col-sm-5" id="left-section">', '<div class="col-sm-5" id="left-section" style="visibility:hidden">', .x) %>%
-#                         HTML())
-#    }
+    if(input$lmfg == "Andau"){
+      html_code <- map(html_code,
+                       ~ gsub('<div class="col-sm-5" id="left-section">', '<div class="col-sm-5" id="left-section" style="visibility:hidden">', .x) %>%
+                         HTML())
+    }
 
     if(all(sapply(filt_data_laser, "[[", 'Website') %in%
            c("https://innovativeoptics.com/pi1-laser-glasses-frames/", "https://innovativeoptics.com/pi17-laser-glasses-frames/",
-             "https://innovativeoptics.com/pi23-laser-glasses-frames/", "https://innovativeoptics.com/pi19-laser-glasses-frames/"))){
+             "https://innovativeoptics.com/pi23-laser-glasses-frames/", "https://innovativeoptics.com/pi19-laser-glasses-frames/", "https://innovativeoptics.com/pi32-laser-glasses-frames/"))){
 
-      pattern <- 'href=" https://innovativeoptics.com/pi(1|17|23|19)-laser-glasses-frames/ ", '
+      pattern <- 'href=" https://innovativeoptics.com/pi(1|17|23|19|32)-laser-glasses-frames/ ", '
 
       html_code <- map(html_code, ~ gsub(pattern, '', .x)  %>%
                          HTML())
